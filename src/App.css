@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+.navbar{
+  /* float: left; */
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 750px;
+  text-align: center;
+  background-color: white;
+  
+}
+.navbar a{
+  text-decoration: none;
+  color: black;
+}
+body{
+  background-color: aliceblue;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
