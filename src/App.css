@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 750px;
+  width: 850px;
   text-align: center;
   background-color: white;
   margin-top: 1rem;
@@ -36,7 +36,7 @@ body {
 .main {
   border-style: solid;
   border-radius: .5rem;
-  width: 750px;
+  width: 850px;
   text-align: center;
   margin: auto;
   margin-top: 1rem;
