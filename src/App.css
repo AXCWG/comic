@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.navbar{
+.navbar {
   /* float: left; */
   margin: auto;
   display: flex;
@@ -12,15 +12,37 @@
   width: 750px;
   text-align: center;
   background-color: white;
-  
+  margin-top: 1rem;
+  border-style: solid;
+  border-radius: .5rem;
 }
-.navbar a{
+.controls{
+  margin: auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.navbar a {
   text-decoration: none;
   color: black;
 }
-body{
-  background-color: aliceblue;
+
+body {
+  background-color: rgb(146, 131, 177);
 }
+
+.main {
+  border-style: solid;
+  border-radius: .5rem;
+  width: 750px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -52,6 +74,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
