@@ -53,7 +53,7 @@ function navbar() {
     <>
       <div className='navbar'>
         <div>
-          <a href='https://axcwg.cn'>Back</a>
+          <a onClick={()=>{window.history.back()}}>Back</a>
           
         </div>
         
@@ -63,9 +63,9 @@ function navbar() {
 }
 
 function App() {
-  const [repObj, setObj] = useState(lul)
 
   
+  const [repObj, setObj] = useState(lul)
   if(repObj.id < 1){
     
     
@@ -118,6 +118,7 @@ function App() {
       
       
     </>
+    
 
   );
 }
