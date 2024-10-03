@@ -10,7 +10,7 @@ var afterExist = await checkIfAfterExist()
 console.log(afterExist)
 async function Init(id){
   if(id === null){
-    var response = await fetch('http://andyxie.cn:5766/api/latest')
+    var response = await fetch('https://axcwg.cn/api/latest')
     //  console.log( await  response)
     var object = (await response).json()
     console.log(await object)
@@ -18,7 +18,7 @@ async function Init(id){
   }else{
     
     
-    var response = await fetch('http://andyxie.cn:5766/api/get?id=' + id)
+    var response = await fetch('https://axcwg.cn/api/get?id=' + id)
     //  console.log( await  response)
     var object = (await response).json()
     console.log(await object)
@@ -29,7 +29,7 @@ async function Init(id){
 
 }
 async function checkIfPrevExist(){
-  var response = await fetch('http://andyxie.cn:5766/api/get?id=' + (lul.id - 1 ))
+  var response = await fetch('https://axcwg.cn/api/get?id=' + (lul.id - 1 ))
   var object = (await response).json()
   console.log(await object)
   if((await object).id === 0){
@@ -39,7 +39,7 @@ async function checkIfPrevExist(){
   }
 }
 async function checkIfAfterExist(){
-  var response = await fetch('http://andyxie.cn:5766/api/get?id=' + (lul.id + 1) )
+  var response = await fetch('https://axcwg.cn/api/get?id=' + (lul.id + 1) )
   var object = (await response).json()
   if((await object).id === 0){
     return false
@@ -53,7 +53,7 @@ function navbar() {
     <>
       <div className='navbar'>
         <div>
-          <a href='https://axcwg.github.io'>Back</a>
+          <a href='https://axcwg.cn'>Back</a>
           
         </div>
         
