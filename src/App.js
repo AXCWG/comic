@@ -69,7 +69,7 @@ function App() {
   if(repObj.id < 1){
     
     
-    window.location.href = "/"
+    window.location.href = "/comic"
   }
     
   function Iflatest(){
@@ -101,13 +101,13 @@ function App() {
         </div>
         <div className='controls'>
           <div>
-            <button disabled={!prevExist} onClick={()=>{window.location.href ="/?id=" + (repObj.id - 1) }} >{"< Back"}</button>
+            <button disabled={!prevExist} onClick={()=>{window.location.href ="/comic/?id=" + (repObj.id - 1) }} >{"< Back"}</button>
           </div>
           <div>
-            <button onClick={()=>{window.location.href = "/"}} >{"Latest"}</button>
+            <button onClick={()=>{window.location.href = "/comic"}} >{"Latest"}</button>
           </div>
           <div>
-            <button disabled={!afterExist} onClick={()=>{window.location.href = "/?id=" + (repObj.id + 1)}}>{"Next >"}</button>
+            <button disabled={!afterExist} onClick={()=>{window.location.href = "/comic/?id=" + (repObj.id + 1)}}>{"Next >"}</button>
           </div>
         </div>
         <footer style={{fontSize: ".5em"}}>
